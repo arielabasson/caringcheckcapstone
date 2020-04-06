@@ -40,20 +40,6 @@ a {
   transition-duration: 5s;
 }
 
-.nextarrow{
-
-  position:absolute;
-  margin-top: 250%;
-  left: 40%;
-  color:#F18282;
-  border:0;
-  font-size: 80px;
-  cursor:pointer;
-  outline:none;
-  z-index:10000000000000;
-  transition-duration: 5s;
-}
-
 
 .back{
   background:none;
