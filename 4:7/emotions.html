@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <title>Scroll Project</title>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <!-- import the webpage's stylesheet -->
+   <link rel="stylesheet" href="css/style.css" />
+   <script
+     type="text/javascript"
+     src="https://code.jquery.com/jquery-latest.js"
+   ></script>
+   <script
+     src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"
+     defer
+   ></script>
+   <script src="scripts/script.js" defer></script>
+   <link
+     href="https://fonts.googleapis.com/css?family=Asul|Fahkwang:500|Gayathri:700|Proza+Libre:500&display=swap"
+     rel="stylesheet"
+   />
+   <link rel="stylesheet" href="https://use.typekit.net/lgg2jvx.css" />
+    <style>
+
+          .subtitle{
+            color: #F18282;
+            margin-top: 10%;
+          }
+
+      div {
+        border-radius: 5px;
+        background-color: #white;
+        padding: 20px;
+      }
+
+      /*     body{
+        font-family: 'Noto Sans', sans-serif;
+      	margin:0;
+      	width:100%;
+      /* 	height:75; */
+      /*   	background:#ffffff; */
+      /* 	-webkit-font-smoothing: antialiased;
+      	-moz-osx-font-smoothing: grayscale; */
+      } */
+      header{
+      	width:100%;
+      	background:#ffffff;
+      	height:60px;
+      	line-height:60px;
+      	border-bottom:1px solid #dddddd;
+      }
+
+
+      .glyphicon-home{
+        color:white;
+        font-size:1.5em;
+        margin-top:5px;
+        margin:0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1></h1>
+
+    <header>
+      <button class="back">
+        <a href="https://locationcheckin.glitch.me/">&#8249;</a>
+      </button>
+      <button class="hamburger">&#9776;</button>
+      <button class="cross">&#735;</button>
+    </header>
+
+    <div class="menu">
+      <ul>
+        <a href="https://boiling-wakeful-swift.glitch.me/"><li>HOME</li></a>
+        <a href="https://boiling-wakeful-swift.glitch.me/checkin1.html"
+          ><li>CHECK IN</li></a
+        >
+        <a href="#"><li>LEARN MORE</li></a>
+      </ul>
+    </div>
+
+    <div class="instructions">
+      <div class="subtitle" id="a">
+        HOW ARE YOU FEELING?
+      </div>
+    </div>
+    <div id="panel">
+      <div class="row emotion">
+        <div class="column">
+          <p>
+            <a id="stressed" href="https://important-short-sunspot.glitch.me/">
+              Stressed
+            </a>
+            <br />
+            Anxious
+            <br />
+            Annoyed
+            <br />
+            Angry
+            <br />
+            Anxious
+            <br />
+            Annoyed
+            <br />
+            Angry
+            <br />
+            Anxious
+            <br />
+            Annoyed
+            <br />
+          </p>
+        </div>
+        <div class="column">
+          <p>
+            <a id="sad">Sad</a>
+            <br />
+            Hurt
+            <br />
+            Insulted
+            <br />
+            Hurt
+            <br />
+            Insulted
+            <br />
+            Hurt
+            <br />
+            Insulted
+            <br />
+            Hurt
+            <br />
+            Hurt
+            <br />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <button class="instruction" id="flip">Select an emotion</button>
+
+    <!-- improved -->
+    <!--  		</div>
+		<div class="btn-wrap">
+		<button id="btn-toggle">read more</button>
+		</div>-->
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>
