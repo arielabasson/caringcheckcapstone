@@ -45,11 +45,11 @@ a {
 /* Wrapper */
 #page-nav {
   margin-left: -10%;
-  padding: 15px;
+  padding-left: 10px;
   background: #000;
   position: sticky;
   top: 0;
-  width: 100vh;
+  width: 100vw;
   background: #FFF8FB;
   z-index: 10000000;
   /* If you want the navigation bar to stick on top
@@ -61,7 +61,8 @@ a {
 /* Hide Hamburger */
 #page-nav label, #hamburger {
   display: none;
-  padding: 20px;
+  padding-left: 10px;
+  font-size: 20px;
 }
 
 /* Menu Items */
@@ -69,8 +70,9 @@ a {
   padding: 20px;
   background: #FFF8FB;
   list-style-type: none;
-  margin: 0;
-  padding: 0; 
+  margin: 0; 
+  padding-top: 20%;
+  padding-bottom: 50%;
 }
 #page-nav ul li {
   display: inline-block;
@@ -80,7 +82,7 @@ a {
   color: #FF5238;
   text-decoration: none;
   font-family: aktiv-grotesk, sans-serif;
-  font-size: 80px;
+  font-size: 70px;
   line-height: 2em;
 
 }
@@ -89,7 +91,7 @@ a {
 @media screen and (max-width: 768px){
     #page-nav{
       padding: 20px;
-      width: 100vh;
+      width: 100vw;
       left: -10%;
     }
 
@@ -143,7 +145,7 @@ a {
   position: sticky;
   top: 0;
   background-color: #FFF8FB;
-  font-size: 40px;
+  font-size: 30px;
  color: #FF5238;
  letter-spacing: 2px;
  left: 0%;
@@ -172,9 +174,9 @@ font-weight: 300;
 
 .exercisetitle{
   position: absolute;
-  font-size: 200px;
-  left: -3%;
-  top: 30%;
+  font-size: 100px;
+  left: -5%;
+  top: 15%;
   line-height: .75em;
   color: #00745D;
 /*   font-family: 'Fahkwang', sans-serif; */
@@ -186,7 +188,7 @@ font-weight: 300;
 }
 
 .subtitle{
-  font-size: 40px;
+  font-size: 30px;
   margin-top: 20px;
   color: #0A014F;
 /*   font-family: 'Fahkwang', sans-serif; */
@@ -230,13 +232,15 @@ font-weight: 300;
 
 #musclerelaxation{
   position: absolute;
-  left: 10.5%;
-  top: 40%;
+  left: 10%;
+  top: 22%;
   color: #FFF8FB;
-  font-size: 100px;
+  font-size: 55px;
   font-family: kepler-std-condensed-subhead, serif;
   font-weight: 400;
   font-style: normal;
+  text-align: center;
+  margin: auto;
 
 }
 
@@ -245,12 +249,12 @@ font-weight: 300;
     background-color: #FFF8FB;   
     height:100px;
     width:100px;
-    left: 37%;
+    left: 32%;
     border-radius:50%;
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
     /*-webkit-animation:changewidth 6s infinite;*/
-    margin-top: 20%;
+    margin-top: 30%;
 
   	animation-duration: 4s;
   animation-name: changewidth;
@@ -311,7 +315,7 @@ font-weight: 300;
   padding-left: 2px;
   border-radius: 8px;
   border: solid 3px #FAA6FF;
-  width: 90vh;
+  width: 80%;
   margin-left: 5%;
   text-transform: uppercase;
 }
@@ -320,7 +324,7 @@ font-weight: 300;
   /*border: 2px solid #3772FF;*/
   /*padding: 5px 5px 5px 5px;*/
   border-radius: solid 8px #FAA6FF;
-  font-size: 40px;
+  font-size: 25px;
  margin-top: 30px;  
  color: #FF5238;
  letter-spacing: 2px;
@@ -332,24 +336,30 @@ font-weight: 300;
 }
 
 .wrapper {
+  position: relative;
   transform:translateY(-50%);
   width: 75%;
+  top: 50%;
   overflow:hidden;
   color: #FFF8FB;
   margin-left: 12%;
 }
 
+#wrapper{
+  top: 30%;
+}
+
 .wrapper p {
+  margin-top: 300px;
   font-family: aktiv-grotesk, sans-serif;
   position:absolute;
   left:0%;
   width: 100%;
-  font-size:40px;
+  font-size:32px;
   color: #FFF8FB;
-  top:0;
   cursor:pointer;
   opacity:0;
-  transition:left 1.5s, opacity .5s ease;
+  transition:left 1.5s, opacity 3s ease;
 }
 
 .wrapper p.activeText {
@@ -359,7 +369,7 @@ font-weight: 300;
 }
 
 .wrapper p.slideLeft {
-  left:-100%;
+  left:0%;
   opacity:0;
 }
 
@@ -377,8 +387,8 @@ ul li {
 .dot {
   margin-left: 20px;
   margin-right: 20px;
-  width:50px;
-  height: 50px;
+  width:30px;
+  height: 30px;
   border: 5px solid #FFF8FB;
   border-radius: 100px;
   background: transparent;
@@ -390,23 +400,6 @@ ul li {
 .active {
   background:#FFF8FB;
   border: 5px solid #FFF8FB;
-}
-
-#arrow2{
-  background:none;
-  position:absolute;
-  top:235%;
-  left: 45%;
-  transform: rotate(-90deg);
-  line-height:45px;
-  color:#F18282;
-  border:0;
-  font-size: 80px;
-  cursor:pointer;
-  outline:none;
-  z-index:10000000000000;
-  transition-duration: 5s;
-  margin-bottom: 50%;
 }
 
 
