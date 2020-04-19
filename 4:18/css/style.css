@@ -1,12 +1,12 @@
 /* CSS files add styling rules to your content */
 
 body {
-  font-family: helvetica, arial, sans-serif;
-  margin: 2em;
   background-color: #EAF0FF;
   transition:opacity 1s ease-out;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
 }
 
 body.fadeOut{
@@ -44,8 +44,6 @@ a {
 /* [ON BIG SCREEN] */
 /* Wrapper */
 #page-nav {
-  margin-left: -10%;
-  padding-left: 10px;
   background: #000;
   position: sticky;
   top: 0;
@@ -92,7 +90,6 @@ a {
     #page-nav{
       padding: 20px;
       width: 100vw;
-      left: -10%;
     }
 
   /* Show Hamburger */
