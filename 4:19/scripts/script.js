@@ -232,6 +232,46 @@ $( ".hamburger" ).show();
 
 
 
+// BUTTON SLIDING
+
+var a= true;
+
+    $("a").click(function(){
+        if (a==true) {
+            $( "#squaree2a" ).css("left","25%");
+            $( "#squaree2a" ).css("background-color","#fff126");
+            $( "#squaree2b" ).css("left","75%");
+            $( "#squaree2b" ).css("background-color","#ffedf9");
+            
+            a=false;
+        }
+        else {
+            $( "#squaree2a" ).css("left","75%");
+            $( "#squaree2a" ).css("background-color","#ffedf9");
+            $( "#squaree2b" ).css("left","25%");
+            $( "#squaree2b" ).css("background-color","#fff126");
+            
+            a=true;
+        }
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

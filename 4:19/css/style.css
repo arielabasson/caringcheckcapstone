@@ -44,6 +44,7 @@ a {
 /* [ON BIG SCREEN] */
 /* Wrapper */
 #page-nav {
+  padding-bottom: 20px;
   background: #000;
   position: sticky;
   top: 0;
@@ -59,7 +60,8 @@ a {
 /* Hide Hamburger */
 #page-nav label, #hamburger {
   display: none;
-  padding-left: 10px;
+  padding-left: 20px;
+  padding-bottom: 20px;
   font-size: 20px;
 }
 
@@ -88,7 +90,6 @@ a {
 /* [ON SMALL SCREENS] */
 @media screen and (max-width: 768px){
     #page-nav{
-      padding: 20px;
       width: 100vw;
     }
 
@@ -253,17 +254,18 @@ font-weight: 300;
 
 .circle{
     position: absolute;
-    background-color: #FFF8FB;   
-    height:100px;
-    width:100px;
-    left: 35%;
+    background-color: #FFF8FB; 
+    opacity: .5;  
+    height:275px;
+    width:275px;
+    left: 15%;
     border-radius:50%;
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
     /*-webkit-animation:changewidth 6s infinite;*/
-    margin-top: 60%;
+    margin-top: 35%;
 
-  	animation-duration: 4s;
+  	animation-duration: 5s;
   animation-name: changewidth;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -349,6 +351,7 @@ font-weight: 300;
   transform:translateY(-50%);
   width: 100%;
   top: 50%;
+
   overflow:hidden;
   color: #0A014F;
 }
@@ -361,13 +364,14 @@ font-weight: 300;
   margin-top: 300px;
   font-family: aktiv-grotesk, sans-serif;
   position:absolute;
-  left:0%;
-  width: 100%;
-  font-size:37px;
+  left:50%;
+  width: 90%;
+  margin-left: 10%;
+  font-size:20px;
   color: #0A014F;
   cursor:pointer;
   opacity:0;
-  transition:left 1.5s, opacity 3s ease;
+  transition:left 2s, opacity 0s ease-out;
   text-align: center;
 }
 
@@ -393,12 +397,16 @@ ul {
 ul li {
   list-style:none;
 }
+
+.dots-wrap{
+  margin-left: 10%;
+}
 .dot {
   margin-left: 20px;
   margin-right: 20px;
   width:30px;
   height: 30px;
-  border: 5px solid #FAA6FF;
+  border: solid 5px #FAA6FF;
   border-radius: 100px;
   background: transparent;
   display:inline-block;
@@ -415,12 +423,12 @@ ul li {
 /*SCROLL INDICATION*/
 
 .learnmore{
-  margin-top: 20%;
-  margin-left: -5%;
+  position: absolute;
+  margin-top: 95%;
   font-size: 20px;
  color: #FF5238;
  letter-spacing: 2px;
- left: 0%;
+ margin-left: 40%;
 /*   font-family: 'Fahkwang', sans-serif; */
   font-family: aktiv-grotesk, sans-serif;
   text-align: center;
@@ -432,14 +440,104 @@ ul li {
 
 @keyframes changecolor {
   from {
-    color: #FAA6FF;
+    color: #FFF8FB;
+    
     
   }
 
   to {
     color: #0A014F;
+    
   }
 }
+
+
+
+@media only screen and (max-width: 375px), (min-width: 375px) {
+
+
+#page-nav {
+  padding-bottom: 20px;
+  background: #000;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  background: #FFF8FB;
+  z-index: 10000000;
+  /* If you want the navigation bar to stick on top
+  position: sticky;
+  top: 0;
+  */
+}
+
+/* Hide Hamburger */
+#page-nav label, #hamburger {
+  display: none;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+/* Menu Items */
+#page-nav ul {
+  padding: 0px;
+  background: #FFF8FB;
+  list-style-type: none;
+  margin: 0; 
+  padding-top: 40%;
+  padding-bottom: 255px;
+}
+#page-nav ul li {
+  display: inline-block;
+  box-sizing: border-box;
+}
+#page-nav ul li a {
+  color: #FF5238;
+  text-decoration: none;
+  font-family: aktiv-grotesk, sans-serif;
+  font-size: 60px;
+  line-height: 2em;
+
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+    #page-nav{
+      width: 100vw;
+    }
+
+  /* Show Hamburger */
+  #page-nav label {
+    display: inline-block;
+    color: #FF5238;
+    background: #FFF8FB;
+    font-style: normal;
+    font-size: 3em;
+  }
+
+  /* Break down menu items into vertical */
+  #page-nav ul li {
+    background: #FFF8FB;
+    display: block;
+  }
+  #page-nav ul li {
+    border-top: 0px solid #333;
+  }
+
+  /* Toggle show/hide menu on checkbox click */
+  #page-nav ul {
+    display: none;
+  }
+  #page-nav input:checked ~ ul {
+    display: block;
+  }
+
+
+}
+
+        
+        
+      }
 
 
 

@@ -24,32 +24,29 @@
 
     <style>
            body{
+            padding-top: 0;
             background-color: #FFF8FB;
+            padding: 0;
+            margin: 0;
+            padding-top: 0;
+            margin-top: 0;
           }
 
 
 
           .subtitle{
             position: absolute;
-            color: #0A014F;
+            color: #faa6ff;
             top: 20%;
             font-size: 150px;
-            margin-left: -8%;
-            color: #FF5238;
+            margin-left: -1%;
             line-height: 1em;
           }
 
-          .exercisetitle{
-            color: #0A014F;
-            font-size: 100px;
-            top: 20%;
-          }
-
           .emotionbutton{
-            margin-top: 100%;
-            margin-left: 30%;
-            padding-right: 15px;
-            padding-left: 15px;
+            margin-top: 0%;
+            margin-bottom: 10%;
+            margin-left: 18%;
           }
 
       div {
@@ -68,29 +65,30 @@
         -moz-osx-font-smoothing: grayscale; */
 
       .section1{
+        top: -5%;
         position: relative;
         width: 100vw;
         height: 100vh;
-        width: calc(100vw - 40px);
+        background-color: #0a0150;
+
         /*padding-bottom: 10%;*/
       }
 
       .section2{
         position: relative;
         left: -10%;
-        padding-right: 40px;
         /*top: 100vh;*/
         width: 100vw;
         height: 100vh;
-        background-color: #FF5238;
+       /* background-color: #FF5238;*/
         z-index: 100000;
         padding-top: 10%;
+
       }
 
       .section3{
-        background-color: #FAA6FF;
         position: relative;
-        left: -10%;
+        left: 0%;
         padding-right: 40px;
         /*top: 100vh;*/
         width: 100vw;
@@ -100,14 +98,112 @@
       }
 
       .learnmore{
-        top: 60%;
-        left: 13%;
+        margin-top: 120%;
         position: absolute;
+        color: #FAA6FF;
+        z-index: 1000;
+        margin-left: 13%;
+        animation-duration: 1s;
       }
-      
+
+      @keyframes changecolor {
+  from {
+    color: #faa6ff;
+    
+    
+  }
+
+  to {
+    color: #FFF8FB;
+    
+  }
+}
+    .bodytext{
+      color: #faa6ff;
+    }
+
+    .blur{
+      background-color: #0a0150;
+      filter: blur(8px);
+  -webkit-filter: blur(8px);
+    }
+
+    .wrapper p {
+  margin-top: 300px;
+  font-family: aktiv-grotesk, sans-serif;
+  position:absolute;
+  width: 90%;
+  margin-left: 10%;
+  font-size:30px;
+  color: #faa6ff;
+  cursor:pointer;
+  opacity:0;
+  transition: opacity 2s;
+  text-align: center;
+}
+    .wrapper{
+      margin-bottom: -50px;
+      margin-left: 0;
+    } 
+
+.dots-wrap{
+  margin-left: 10%;
+}
       div{
         scroll-snap-align: center;
       }
+
+
+
+  @media only screen and (max-width: 375px) (min-width: 375px) {
+
+        body{
+            padding-top: 0;
+            background-color: #FFF8FB;
+            padding: 0;
+            margin: 0;
+            padding-top: 0;
+            margin-top: 0;
+            padding-right: 0;
+            margin-right: 0;
+          }
+
+          .subtitle{
+            position: absolute;
+            color: #faa6ff;
+            top: 20%;
+            font-size: 150px;
+            line-height: 1em;
+          }
+
+          .section2{
+        position: relative;
+        left: 0%;
+        /*top: 100vh;*/
+        width: 100vw;
+        height: 100vh;
+       /* background-color: #FF5238;*/
+        z-index: 100000;
+        padding-top: 10%;
+
+      }
+
+                .wrapper p {
+          margin-left: 0%;
+        }
+            .dots-wrap{
+          margin-left: -7%;
+        }
+
+         .emotionbutton{
+            margin-left: 0%;
+          }
+
+
+        
+      }
+
+
     </style>
   </head>
   <h1></h1>
@@ -118,35 +214,34 @@
     <div class="subtitle">
       Caring Check
     </div>
-
     <div class="learnmore">
-       SCROLL TO LEARN MORE 
+      <p> SCROLL TO LEARN MORE </p>
     </div>
-
   </section>
 
 
 
    </section>
 
-   <section class="section2">
-      <div class="bodytext">
-        Cancer is not only extremely mentally tolling on its victims but also their caretakers. It  is often easy for us to opt to neglect to consider the detrimental effects that cancer has on caretakers.  
-      </div>
-    </section>
 
-    <section class= "section3">
-      <div class="bodytext">
-        As caretakers, we may be prone to solely placing an emphasis on our loved one’s health and forget about our own. Sometimes, this can be attributed to lack of time to consider our well-being or lack of means.  “Caring Check” is an online check-in platform meant to prompt caretakers to frequently pause and take a moment to consider their current states of mind. 
-      </div>
-    </section>
-
-<a href="location.html"><div class="emotiontext emotionbutton">
+    <section class="section2">
+      <div class="wrapper" id="wrapper">
+        <p>Cancer is not only extremely mentally tolling on its victims but also their caretakers. It  is often easy for us to opt to neglect to consider the detrimental effects that cancer has on caretakers. <br></br></p>
+        <p> As caretakers, we may be prone to solely placing an emphasis on our loved one’s health and forget about our own. Sometimes, this can be attributed to lack of time to consider our well-being or lack of means <br></br></p>
+        <p> “Caring Check” is an online check-in platform meant to prompt caretakers to frequently pause and take a moment to consider their current states of mind. </p>
+        <ul class="dots-wrap">
+          <li class="dot"></li>
+          <li class="dot"></li>
+          <li class="dot"></li>
+        </ul>
+    </div>
+    <a href="location.html"><div class="emotiontext emotionbutton">
       <p>
         ENTER
       </p>
     </div></a>
 
+    </section>
 
 
 

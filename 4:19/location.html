@@ -23,11 +23,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/lgg2jvx.css">
 
     <style>
-
-    .container{
-        position: relative;
-        width: 100vw;
-      }
+        
+      
            body{
             background-color: #FFF8FB;
           }
@@ -36,16 +33,17 @@
 
           .subtitle{
             color: #0A014F;
-            margin-top: 10%;
+            margin-top: 5%;
             font-size: 55px;
-            margin-left: -9%;
+            margin-left: 0%;
 
           }
 
     
 
           .emotionbutton{
-          	margin-top: 12%;
+          	margin-top: 10%;
+            margin-left: 7%;
           }
 
         
@@ -76,8 +74,33 @@
 
       .section1{
         position: relative;
-        width: calc(100vw - 40px);
+        width: 100vw;
+        height: 70vh;
       }
+
+
+      @media only screen and (max-width: 375px),(min-width: 375px){
+
+  
+
+        .subtitle{
+            color: #0A014F;
+            margin-top: 20%;
+            font-size: 50px;
+            margin-left: 0%;
+
+          }
+
+    
+
+          .emotionbutton{
+            margin-top: 10%;
+            margin-left: 7%;
+          }
+
+
+      }
+
 
     </style>
   </head>
@@ -101,23 +124,42 @@
     <div class="subtitle">Where are you now?</div>
   
 
-    <a href="status.html"><div class="emotiontext emotionbutton">
+    <a href="status.html"><div class="emotiontext emotionbutton" id="a">
       <p>
         TREATMENT CENTER
       </p>
     </div></a>
 
-    <div class="emotiontext emotionbutton">
+    <div class="emotiontext emotionbutton" id="b">
       <p>
         HOME
       </p>
     </div>
 
-    <div class="emotiontext emotionbutton">
+    <div class="emotiontext emotionbutton" id="c">
       <p>
         ON THE GO
       </p>
     </div>
+
+    <!-- div class="emotiontext emotionbutton" id="d">
+      <p>
+        GOOD
+      </p>
+    </div></a>
+
+    <div class="emotiontext emotionbutton" id="e">
+      <p>
+        NEUTRAL
+      </p>
+    </div>
+
+    <div class="emotiontext emotionbutton" id="f">
+      <p>
+        BAD
+      </p>
+    </div> -->
+
 
     
   </section>
