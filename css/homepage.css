@@ -357,6 +357,42 @@ ul li {
         
 /*MEDIA QUERIES*/
 
+ /*IPHONE 678 PLUS*/
+            
+       
+
+        @media (max-width: 414px) and (max-height: 736px) {
+
+           #wrapper{
+              top: 37%;
+              left: 10%;
+        }
+
+        .wrapper p.activeText {
+              position: relative;
+              left: 20px;
+              opacity: 1;
+          }
+
+        .learnmore{
+          margin-left: 16%;
+        }
+
+
+        .section1{
+          margin-top: 0%;
+    padding-bottom: 3%;
+        }
+
+          .dots-wrap {
+              position: absolute;
+              top: 85%;
+              margin-left: 26%;
+            }
+
+        }
+
+
             /*IPHONE X*/
 
 @media (max-width: 375px) and (max-height: 812px) { 
@@ -393,11 +429,17 @@ ul li {
           margin-left: 18%;
         }
         
+         .learnmore{
+          margin-left: 13%;
+        }
+
+
+
       }
 
-      .learnmore{
-        margin-left: 13%;
-      }
+      
+
+
 
 
 
@@ -441,45 +483,15 @@ ul li {
 
 
           
+            .learnmore{
+          margin-left: 13%;
+        }
+
 
       }
 
 
-        /*IPHONE 678 PLUS*/
-            
        
-
-        @media (max-width: 414px) and (max-height: 736px) {
-
-           #wrapper{
-              top: 37%;
-              left: 10%;
-        }
-
-        .wrapper p.activeText {
-              position: relative;
-              left: 20px;
-              opacity: 1;
-          }
-
-        .learnmore{
-          margin-left: 16%;
-        }
-
-
-        .section1{
-          margin-top: 0%;
-    padding-bottom: 3%;
-        }
-
-          .dots-wrap {
-              position: absolute;
-              top: 85%;
-              margin-left: 26%;
-            }
-
-        }
-
 
 
 
