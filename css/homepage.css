@@ -416,18 +416,29 @@ ul li {
 
         
 
-        
+          .wrapper p.activeText {
+            position: relative;
+            left: 23px;
+            opacity: 1;
+            }
 
           .wrapper p {
-          left:50%;
-          width: 90%;
-          margin-left: 10%;
-          font-size:24px;
-        }
+            left: 50%;
+            width: 90%;
+            margin-left: 0%;
+            font-size: 24px;
+            }
 
-          #wrapper{
-          top: 35%;
-        }
+          #wrapper {
+            top: 35%;
+            left: 9%;
+            }
+        .dots-wrap {
+              position: absolute;
+              top: 85%;
+              margin-left: 26%;
+            }
+
 
           
 
@@ -442,7 +453,14 @@ ul li {
 
            #wrapper{
               top: 37%;
+              left: 10%;
         }
+
+        .wrapper p.activeText {
+              position: relative;
+              left: 20px;
+              opacity: 1;
+          }
 
         .learnmore{
           margin-left: 16%;
@@ -453,6 +471,12 @@ ul li {
           margin-top: 0%;
     padding-bottom: 3%;
         }
+
+          .dots-wrap {
+              position: absolute;
+              top: 85%;
+              margin-left: 26%;
+            }
 
         }
 
