@@ -1,0 +1,683 @@
+/* CSS files add styling rules to your content */
+
+body {
+  background-color: #EAF0FF;
+  transition:opacity 1s ease-out;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+}
+
+body.fadeOut{
+  opacity:0;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+/* HAMBURGER AND BACK BUTTON */
+a {
+  text-decoration: none;
+  color: #FF5238;
+}
+
+
+.section1{
+        position: relative;
+        width: 100vw;
+        height: 70vh;
+      }
+
+
+
+
+/* [ON BIG SCREEN] */
+/* Wrapper */
+#page-nav {
+  padding-bottom: 20px;
+  background: #000;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background: #FFF8FB;
+  z-index: 10000000;
+  /* If you want the navigation bar to stick on top
+  position: sticky;
+  top: 0;
+  */
+}
+
+/* Hide Hamburger */
+#page-nav label, #hamburger {
+  display: none;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+/* Menu Items */
+#page-nav ul {
+  padding: 20px;
+  background: #FFF8FB;
+  list-style-type: none;
+  text-align: center;
+  margin: 0; 
+  padding-top: 20%;
+  padding-bottom: 50%;
+}
+#page-nav ul li {
+  display: inline-block;
+  box-sizing: border-box;
+}
+#page-nav ul li a {
+  color: #FF5238;
+  text-decoration: none;
+  font-family: aktiv-grotesk, sans-serif;
+  font-size: 70px;
+  line-height: 2em;
+
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+    #page-nav{
+      width: 100vw;
+    }
+
+  /* Show Hamburger */
+  #page-nav label {
+    display: inline-block;
+    color: #FF5238;
+    background: #FFF8FB;
+    font-style: normal;
+    font-size: 3em;
+  }
+
+  /* Break down menu items into vertical */
+  #page-nav ul li {
+    background: #FFF8FB;
+    display: block;
+  }
+  #page-nav ul li {
+    border-top: 0px solid #333;
+  }
+
+  /* Toggle show/hide menu on checkbox click */
+  #page-nav ul {
+    display: none;
+  }
+  #page-nav input:checked ~ ul {
+    display: block;
+  }
+}
+
+
+
+
+
+/* REST OF PAGE */
+
+
+
+
+
+
+.exercisetitle{
+  position: absolute;
+  font-size: 100px;
+  left: -5%;
+  top: 15%;
+  line-height: .75em;
+  color: #00745D;
+/*   font-family: 'Fahkwang', sans-serif; */
+  font-family: kepler-std-condensed-subhead, serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  z-index: 10000;
+}
+
+.subtitle{
+  color: #0A014F;
+  margin-top: 20%;
+  margin-bottom: 25%;
+  font-size: 55px;
+  margin-left: 0%;
+/*   font-family: 'Fahkwang', sans-serif; */
+ font-family: kepler-std-condensed-subhead, serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+
+
+
+
+#about{
+   /*display: none;*/
+}
+.bodytext{
+  position: absolute;
+  color: #0A014F;
+  font-family: aktiv-grotesk, sans-serif;
+            color: #FFF8FB;
+            top: 28%;
+            font-size: 25px;
+  margin-left: 6%;
+  margin-right: 3%;
+/*   text-align: center; */
+    }
+
+
+
+.emotionbutton{
+  
+  margin-top: 30%;
+  margin-left: 7.5%;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  border: solid 3px #FAA6FF;
+  width: 80%;
+  text-transform: uppercase;
+}
+
+.emotiontext{
+  font-size: 25px;
+ margin-top: 30px;  
+ color: #FF5238;
+ letter-spacing: 2px;
+/*   font-family: 'Fahkwang', sans-serif; */
+  font-family: aktiv-grotesk, sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+/*IPHONE 678 PLUS*/
+
+@media (max-width: 414px) and (max-height: 736px){
+
+  .subtitle{
+            color: #0A014F;
+            margin-top: 25%;
+            font-size: 50px;
+            margin-left: 0%;
+            margin-bottom: 12%;
+
+          }
+}
+
+    /*IPHONE X*/
+
+@media (max-width: 375px) and (max-height: 812px) {
+
+
+  .subtitle{
+            color: #0A014F;
+            margin-top: 25%;
+            font-size: 50px;
+            margin-left: 0%;
+            margin-bottom: 20%;
+
+          }
+
+}
+
+
+@media (max-width: 375px) and (max-height: 667px) {
+
+
+  .subtitle{
+            color: #0A014F;
+            margin-top: 25%;
+            font-size: 50px;
+            margin-left: 0%;
+            margin-bottom: 5%;
+
+          }
+
+}
+
+
+
+/*MOCKUP*/
+
+#desktopcontainer{
+    position: absolute;
+    width: 100%;
+
+    display: none;
+    height: 100%;
+    top: 0%;
+    z-index: 10000000000000;
+    background-color: #FFF8FB;
+}
+
+#mobilecontainer{
+            position: absolute;
+            width: 100%;
+
+            display: block;
+            height: 100%;
+            top: 0%;
+            background-color: #FFF8FB;
+           }
+
+@media (min-width: 415px) {
+
+          #desktopcontainer{
+            display: block;
+            z-index: 10000000000000;
+            top: 0%;
+          }
+           #mobilecontainer{
+            position: absolute;
+            width: 100%;
+
+            display: none;
+            height: 100%;
+            top: 0%;
+            background-color: #FFF8FB;
+           }
+
+
+          
+
+
+
+
+          body {
+  background: #FFF8FB;
+}
+
+
+header {
+  position: absolute;
+  font-size:150px;
+  font-family: kepler-std-condensed-subhead, serif;
+  font-weight: 400;
+  color: #0A014F;
+  top: 20%;
+  left: 56%;
+  text-align:center;
+}
+
+.description{
+  width: 475px;
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  position:absolute;
+  left: 57%;
+  top: 40%;
+  font-size:30px;
+  color: #0A014F;
+  margin-right: 10%;
+  text-align: left;
+}
+
+iframe {
+  position: absolute;
+  /*display:block;*/
+  margin-top: 20px;
+  margin-left: 200px;
+  width:375px;
+  height:667px;
+  
+  border: 3px solid #0A014F;
+  top: 6%;
+  left: -47.5%;
+  overflow:hidden;
+}
+
+
+      .iphonecontainer1{
+        position: absolute;
+       
+        border: 3px solid #0A014F;
+        background-color: transparent;
+        width: 400px;
+        height: 830px;
+        top: 4%;
+        left: 10%;
+        border-radius: 45px;
+      }
+
+
+      .circle{
+        position: absolute;
+        background-color: transparent;
+        border: 3px solid #0A014F;
+        width: 60px;
+        height: 60px;
+        top: 90.5%;
+        left: 42%;
+        border-radius: 180px;
+        z-index: 1000;
+      }
+
+
+
+    
+
+      section{
+        display: inline-block;
+      }
+      
+      div{
+        scroll-snap-align: center;
+      }
+
+
+
+      @media (max-width: 1372px) {
+
+          
+
+          .iphonecontainer1{
+            left: 5%;
+            transform: scale(.75);
+          }
+
+          .description{
+            left: 53%;
+
+          }
+
+
+          header{
+            left: 52%;
+          }
+
+
+      }
+
+      @media (max-width: 1250px) {
+
+          
+
+          .iphonecontainer1{
+            left: 5%;
+            transform: scale(.75);
+          }
+
+          .description{
+            left: 50%;
+
+          }
+
+
+          header{
+            left: 49%;
+          }
+
+
+      }
+
+
+
+      @media (max-width: 1140px) {
+
+          
+
+          .iphonecontainer1{
+            left: 5%;
+            transform: scale(.75);
+          }
+
+          header{
+            font-size: 110px;
+          }
+
+
+      }
+
+
+
+
+      @media (max-width: 1107px) {
+
+          
+
+          .iphonecontainer1{
+            left: 5%;
+            transform: scale(.75);
+          }
+
+
+      }
+
+
+      @media (max-width: 950px) {
+
+          
+
+          .iphonecontainer1{
+            left: 3%;
+          }
+
+          header {
+            position: absolute;
+            font-size:100px;
+            font-family: kepler-std-condensed-subhead, serif;
+            font-weight: 400;
+            color: #0A014F;
+            top: 20%;
+            left: 50%;
+          }
+
+          .description{
+            width: 400px;
+            font-family: aktiv-grotesk, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            position:absolute;
+            left: 50%;
+            top: 40%;
+            font-size:20px;
+            color: #0A014F;
+            margin-right: 10%;
+            text-align: left;
+          }
+
+
+      }
+
+
+      @media (max-width: 950px) {
+
+          
+
+          .iphonecontainer1{
+            left: 3%;
+          }
+
+          header {
+            position: absolute;
+            font-size:100px;
+            font-family: kepler-std-condensed-subhead, serif;
+            font-weight: 400;
+            color: #0A014F;
+            top: 20%;
+            left: 50%;
+          }
+
+          .description{
+            width: 400px;
+            font-family: aktiv-grotesk, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            position:absolute;
+            left: 50%;
+            top: 40%;
+            font-size:20px;
+            color: #0A014F;
+            margin-right: 10%;
+            text-align: left;
+          }
+
+
+      }
+
+    @media (max-width: 800px) {
+
+          
+
+          .iphonecontainer1{
+            left: 5%;
+            transform: scale(.5);
+          }
+
+          header {
+            position: absolute;
+            font-size:100px;
+            font-family: kepler-std-condensed-subhead, serif;
+            font-weight: 400;
+            color: #0A014F;
+            top: 10%;
+            left: 25%;
+          }
+
+          .description{
+            width: 300px;
+            font-family: aktiv-grotesk, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            position:absolute;
+            left: 50%;
+            top: 30%;
+            font-size:20px;
+            color: #0A014F;
+            margin-right: 10%;
+            text-align: left;
+          }
+
+
+      }
+
+      @media (max-width: 700px) {
+
+          
+
+          .iphonecontainer1{
+            top: -3%;
+            left: 21%;
+            transform: scale(.5);
+          }
+
+          header {
+            position: absolute;
+            font-size:100px;
+            font-family: kepler-std-condensed-subhead, serif;
+            font-weight: 400;
+            color: #0A014F;
+            top: 5%;
+            left: 25%;
+          }
+
+          .description{
+            width: 370px;
+            font-family: aktiv-grotesk, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            position:absolute;
+            left: 25%;
+            top: 75%;
+            font-size:16px;
+            color: #0A014F;
+            margin-right: 15%;
+            text-align: left;
+          }
+
+
+      }
+
+
+      @media (max-width: 650px) {
+
+          
+
+          .iphonecontainer1{
+            top: -3%;
+            left: 15%;
+            transform: scale(.5);
+          }
+
+          header {
+            position: absolute;
+            font-size:100px;
+            font-family: kepler-std-condensed-subhead, serif;
+            font-weight: 400;
+            color: #0A014F;
+            top: 5%;
+            left: 20%;
+          }
+
+          .description{
+            width: 370px;
+            font-family: aktiv-grotesk, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            position:absolute;
+            left: 20%;
+            top: 75%;
+            font-size:16px;
+            color: #0A014F;
+            margin-right: 15%;
+            text-align: left;
+          }
+
+
+      }
+
+
+      @media (max-width: 555px) {
+
+          
+
+          .iphonecontainer1{
+            top: -3%;
+            left: 10%;
+            transform: scale(.5);
+          }
+
+          header {
+            position: absolute;
+            font-size:100px;
+            font-family: kepler-std-condensed-subhead, serif;
+            font-weight: 400;
+            color: #0A014F;
+            top: 5%;
+            left: 15%;
+          }
+
+          .description{
+            width: 370px;
+            font-family: aktiv-grotesk, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            position:absolute;
+            left: 15%;
+            top: 75%;
+            font-size:16px;
+            color: #0A014F;
+            margin-right: 15%;
+            text-align: left;
+          }
+
+
+      }
