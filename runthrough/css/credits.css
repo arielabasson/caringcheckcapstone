@@ -1,0 +1,258 @@
+/* CSS files add styling rules to your content */
+
+body {
+  background-color: #FFF8FB;
+  transition:opacity 1s ease-out;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+ 
+}
+
+.section1{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        
+      }
+
+      
+
+
+.bodytext {
+  position: absolute;
+  top: 15%;
+  font-size: 24px;
+ color: #0A014F;
+ width: 90vw;
+ left: 5%;
+/*   font-family: 'Fahkwang', sans-serif; */
+ font-family: aktiv-grotesk, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+}
+
+.sources {
+  font-size: 20px;
+ width: 90vw;
+ left: 5%;
+/*   font-family: 'Fahkwang', sans-serif; */
+ font-family: aktiv-grotesk, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  color: #FF5238;
+}
+
+
+body.fadeOut{
+  opacity:0;
+}
+
+
+
+/* [ON BIG SCREEN] */
+/* Wrapper */
+#page-nav {
+  padding-bottom: 20px;
+  background: #000;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background: #FFF8FB;
+  z-index: 10000000;
+  /* If you want the navigation bar to stick on top
+  position: sticky;
+  top: 0;
+  */
+}
+
+/* Hide Hamburger */
+#page-nav label, #hamburger {
+  display: none;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+/* Menu Items */
+#page-nav ul {
+  padding: 20px;
+  background: #FFF8FB;
+  list-style-type: none;
+  text-align: center;
+  margin: 0; 
+  padding-top: 20%;
+  padding-bottom: 50%;
+}
+#page-nav ul li {
+  display: inline-block;
+  box-sizing: border-box;
+}
+#page-nav ul li a {
+  color: #FF5238;
+  text-decoration: none;
+  font-family: aktiv-grotesk, sans-serif;
+  font-size: 70px;
+  line-height: 2em;
+
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+    #page-nav{
+      width: 100vw;
+    }
+
+  /* Show Hamburger */
+  #page-nav label {
+    display: inline-block;
+    color: #FF5238;
+    background: #FFF8FB;
+    font-style: normal;
+    font-size: 3em;
+  }
+
+  /* Break down menu items into vertical */
+  #page-nav ul li {
+    background: #FFF8FB;
+    display: block;
+  }
+  #page-nav ul li {
+    border-top: 0px solid #333;
+  }
+
+  /* Toggle show/hide menu on checkbox click */
+  #page-nav ul {
+    display: none;
+  }
+  #page-nav input:checked ~ ul {
+    display: block;
+  }
+}
+
+
+/* REST OF PAGE */
+
+
+
+.category{
+  
+  margin-top: 20%;
+  
+ 
+  font-size: 20px;
+ color: #FF5238;
+ letter-spacing: 2px;
+ left: 0%;
+/*   font-family: 'Fahkwang', sans-serif; */
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+
+
+
+.exercisetitle{
+  position: absolute;
+  top: 10%;
+  line-height: .75em;
+  font-family: kepler-std-condensed-subhead, serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #0A014F;
+  font-size: 55px;
+  text-align: center;
+  left: 33%;
+}
+
+
+        
+        
+/*MEDIA QUERIES*/
+
+            /*IPHONE X*/
+
+@media (max-width: 375px) and (max-height: 812px) { 
+
+        .exercisetitle{
+            color: #FFF8FB;
+            font-size: 100px;
+            top: 10%;
+            left: 5%;
+          }
+
+      }
+
+
+
+            /*IPHONE 678*/
+
+       @media (max-width: 375px) and (max-height: 667px) {
+
+          
+
+          .exercisetitle{
+            color: #FFF8FB;
+            font-size: 100px;
+            top: 15%;
+            left: 5%;
+          }
+
+          .bodytext{
+            top: 20%;
+          }
+
+
+      }
+
+
+        /*IPHONE 678 PLUS*/
+@media (max-width: 414px) and (max-height: 736px){
+
+    .exercisetitle{
+            color: #FFF8FB;
+            font-size: 100px;
+            top: 15%;
+            left: 5%;
+          }
+
+      .bodytext{
+            top: 20%;
+          }
+}
+
+
+      /*DESKTOP*/
+       
+@media (min-width: 415px){
+  .mockup{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100000;
+  display: block;
+}
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

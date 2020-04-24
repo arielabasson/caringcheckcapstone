@@ -1,0 +1,486 @@
+/* CSS files add styling rules to your content */
+
+body {
+  background-color: #FFF8FB;
+  transition:opacity 1s ease-out;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+ 
+}
+
+.section1{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-color: #FAA6FF;
+      }
+
+      .section2{
+        position: relative;
+        width: 100vw;
+        
+        height: 80vh;
+        z-index: 100000;
+        transition-duration: 2s;
+transition-property: background-color;
+      }
+
+
+body.fadeOut{
+  opacity:0;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+/* HAMBURGER AND BACK BUTTON */
+a {
+  text-decoration: none;
+  color: #FF5238;
+}
+
+
+
+#viewmore{
+  
+ top: 30%;
+ position: absolute;
+ left: 7.5%;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  border: solid 3px #FAA6FF;
+  width: 80%;
+  
+  text-transform: uppercase;
+  color: #FFF8FB;
+  letter-spacing: 2px;
+/*   font-family: 'Fahkwang', sans-serif; */
+  font-family: aktiv-grotesk, sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#viewmore a {
+  text-decoration: none;
+  color: #FFF8FB;
+}
+
+
+/* [ON BIG SCREEN] */
+/* Wrapper */
+#page-nav {
+  padding-bottom: 20px;
+  background: #000;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background: #FFF8FB;
+  z-index: 10000000;
+  /* If you want the navigation bar to stick on top
+  position: sticky;
+  top: 0;
+  */
+}
+
+/* Hide Hamburger */
+#page-nav label, #hamburger {
+  display: none;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+/* Menu Items */
+#page-nav ul {
+  padding: 20px;
+  background: #FFF8FB;
+  list-style-type: none;
+  margin: 0; 
+  padding-top: 20%;
+  padding-bottom: 50%;
+}
+#page-nav ul li {
+  display: inline-block;
+  box-sizing: border-box;
+}
+#page-nav ul li a {
+  color: #FF5238;
+  text-decoration: none;
+  font-family: aktiv-grotesk, sans-serif;
+  font-size: 70px;
+  line-height: 2em;
+
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+    #page-nav{
+      width: 100vw;
+    }
+
+  /* Show Hamburger */
+  #page-nav label {
+    display: inline-block;
+    color: #FF5238;
+    background: #FFF8FB;
+    font-style: normal;
+    font-size: 3em;
+  }
+
+  /* Break down menu items into vertical */
+  #page-nav ul li {
+    background: #FFF8FB;
+    display: block;
+  }
+  #page-nav ul li {
+    border-top: 0px solid #333;
+  }
+
+  /* Toggle show/hide menu on checkbox click */
+  #page-nav ul {
+    display: none;
+  }
+  #page-nav input:checked ~ ul {
+    display: block;
+  }
+}
+
+
+
+
+
+/* REST OF PAGE */
+
+
+
+.topheader{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  margin-top: 20px;
+  background-color: #FFF8FB;
+  font-size: 20px;
+ color: #FF5238;
+ letter-spacing: 2px;
+ left: 0%;
+/*   font-family: 'Fahkwang', sans-serif; */
+  font-family: aktiv-grotesk, sans-serif;
+  text-align: center;
+}
+
+
+
+.exercisetitle{
+  position: absolute;
+  font-size: 100px;
+  top: 30%;
+  left: 5%;
+  line-height: .75em;
+  color: #00745D;
+/*   font-family: 'Fahkwang', sans-serif; */
+  font-family: kepler-std-condensed-subhead, serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  z-index: 10000;
+}
+
+.subtitle{
+  font-size: 30px;
+  margin-top: 20px;
+  color: #0A014F;
+/*   font-family: 'Fahkwang', sans-serif; */
+ font-family: kepler-std-condensed-subhead, serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+
+
+
+/*.bodytext{
+  position: absolute;
+  color: #0A014F;
+  font-family: aktiv-grotesk, sans-serif;
+            color: #FFF8FB;
+            top: 28%;
+            font-size: 25px;
+  margin-left: 6%;
+  margin-right: 3%;
+/*   text-align: center; */
+    
+
+
+
+
+
+
+
+/*EXERCISE STEPS*/
+
+
+
+
+
+.wrapper {
+  position: absolute;
+  /*transform:translateY(-50%);*/
+  width: 100%;
+  /*top: 30%;*/
+
+  overflow:hidden;
+  color: #0A014F;
+}
+
+#wrapper{
+  position: absolute;
+  top: 5%; 
+}
+
+.wrapper p {
+  /*margin-top: 300px;*/
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  position:absolute;
+  top: 0%;
+  left:50%;
+  height: 50vh;
+  width: 90%;
+  margin-left: 5%;
+  font-size:24px;
+  color: #0A014F;
+  cursor:pointer;
+  opacity:0;
+  transition:left 2s, opacity 0s ease-out;
+  text-align: center;
+}
+
+
+.wrapper p.activeText {
+  position:relative;
+  left:0;
+  opacity:1;
+}
+
+.wrapper p.slideLeft {
+  left:0%;
+  opacity:0;
+}
+
+
+
+ul {
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+
+ul li {
+  list-style:none;
+}
+
+.dots-wrap{
+   position: absolute;
+  top: 85%;
+  margin-left: 16%;
+}
+
+
+
+.dot {
+  margin-left: 10px;
+  margin-right: 10px;
+  width:30px;
+  height: 30px;
+  border: solid 5px #FF5238;
+  border-radius: 100px;
+  background: transparent;
+  display:inline-block;
+  text-align:center;
+  cursor:pointer;
+}
+
+.active {
+  background:#FF5238;
+  border: 5px solid #FF5238;
+}
+
+
+
+
+/*SCROLL INDICATION*/
+
+.learnmore{
+  position: absolute;
+  top: 70%;
+  font-size: 20px;
+ color: #FF5238;
+ letter-spacing: 2px;
+ margin-left: 40%;
+/*   font-family: 'Fahkwang', sans-serif; */
+  font-family: aktiv-grotesk, sans-serif;
+  text-align: center;
+  animation-duration: 4s;
+  animation-name: changecolor;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes changecolor {
+  from {
+    color: #FFF8FB;
+    
+    
+  }
+
+  to {
+    color: #0A014F;
+    
+  }
+}
+
+
+
+
+.mockup{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100000;
+  display: none;
+}
+        
+        
+/*MEDIA QUERIES*/
+
+            /*IPHONE X*/
+
+@media (max-width: 375px) and (max-height: 812px) { 
+
+        .exercisetitle{
+            color: #FFF8FB;
+            font-size: 100px;
+            top: 30%;
+            left: 5%;
+          }
+
+
+          
+
+        .section2{
+          height: 85vh;
+        }
+
+        /*.learnmore{
+          top: 0%;
+        }*/
+
+        .wrapper p {
+          left:50%;
+          width: 85%;
+          margin-left: 7.5%;
+          font-size:22px;
+        }
+
+        #wrapper{
+          top: 15%;
+        }
+        
+      }
+
+
+
+            /*IPHONE 678*/
+
+       @media (max-width: 375px) and (max-height: 667px) {
+
+          
+
+          .exercisetitle{
+            color: #FFF8FB;
+            font-size: 100px;
+            top: 30%;
+            left: 5%;
+          }
+
+        
+
+        
+
+          .wrapper p {
+          left:50%;
+          width: 90%;
+          margin-left: 5%;
+          font-size:24px;
+        }
+
+          #wrapper{
+          top: 15%;
+
+        }
+
+        .section2{
+          height: 80vh;
+        }
+
+
+      }
+
+
+        /*IPHONE 678 PLUS*/
+@media (max-width: 414px) and (max-height: 736px){
+
+    .dots-wrap{
+      position: absolute;
+      top: 85%;
+      margin-left: 18%;
+      }
+
+      #wrapper{
+          top: 15%;
+
+        }
+
+      .section2{
+          height: 80vh;
+        }
+}
+
+
+      /*DESKTOP*/
+       
+@media (min-width: 415px){
+  .mockup{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100000;
+  display: block;
+}
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
