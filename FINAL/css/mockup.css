@@ -1,14 +1,54 @@
 
 /*MOCKUP*/
 
+#desktopcontainer{
+    position: absolute;
+    width: 100%;
 
-body {
+    display: none;
+    height: 100%;
+    top: 0%;
+    z-index: 10000000000000;
+    background-color: #FFF8FB;
+}
+
+#mobilecontainer{
+            position: absolute;
+            width: 100%;
+
+            display: block;
+            height: 100%;
+            top: 0%;
+            background-color: #FFF8FB;
+           }
+
+@media (min-width: 415px) {
+
+          #desktopcontainer{
+            display: block;
+            z-index: 10000000000000;
+            top: 0%;
+          }
+           #mobilecontainer{
+            position: absolute;
+            width: 100%;
+
+            display: none;
+            height: 100%;
+            top: 0%;
+            background-color: #FFF8FB;
+           }
+
+
+          
+
+
+
+
+          body {
   background: #FFF8FB;
 }
 
-header, div {
-  text-align:center;
-}
 
 header {
   position: absolute;
@@ -18,6 +58,7 @@ header {
   color: #0A014F;
   top: 20%;
   left: 50%;
+  text-align:center;
 }
 
 .description{
@@ -91,7 +132,21 @@ iframe {
 
 
 
+      @media (max-width: 1140px) {
 
+          
+
+          .iphonecontainer1{
+            left: 5%;
+            transform: scale(.75);
+          }
+
+          header{
+            font-size: 110px;
+          }
+
+
+      }
 
 
       @media (max-width: 1107px) {
@@ -117,7 +172,7 @@ iframe {
 
           header {
             position: absolute;
-            font-size:125px;
+            font-size:100px;
             font-family: kepler-std-condensed-subhead, serif;
             font-weight: 400;
             color: #0A014F;
@@ -143,6 +198,41 @@ iframe {
       }
 
 
+      @media (max-width: 950px) {
+
+          
+
+          .iphonecontainer1{
+            left: 3%;
+          }
+
+          header {
+            position: absolute;
+            font-size:100px;
+            font-family: kepler-std-condensed-subhead, serif;
+            font-weight: 400;
+            color: #0A014F;
+            top: 20%;
+            left: 50%;
+          }
+
+          .description{
+            width: 400px;
+            font-family: aktiv-grotesk, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            position:absolute;
+            left: 50%;
+            top: 40%;
+            font-size:20px;
+            color: #0A014F;
+            margin-right: 10%;
+            text-align: left;
+          }
+
+
+      }
+
     @media (max-width: 800px) {
 
           
@@ -154,7 +244,7 @@ iframe {
 
           header {
             position: absolute;
-            font-size:125px;
+            font-size:100px;
             font-family: kepler-std-condensed-subhead, serif;
             font-weight: 400;
             color: #0A014F;
@@ -185,7 +275,45 @@ iframe {
 
           .iphonecontainer1{
             top: -3%;
-            left: 9%;
+            left: 21%;
+            transform: scale(.5);
+          }
+
+          header {
+            position: absolute;
+            font-size:100px;
+            font-family: kepler-std-condensed-subhead, serif;
+            font-weight: 400;
+            color: #0A014F;
+            top: 5%;
+            left: 25%;
+          }
+
+          .description{
+            width: 370px;
+            font-family: aktiv-grotesk, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            position:absolute;
+            left: 25%;
+            top: 75%;
+            font-size:16px;
+            color: #0A014F;
+            margin-right: 15%;
+            text-align: left;
+          }
+
+
+      }
+
+
+      @media (max-width: 650px) {
+
+          
+
+          .iphonecontainer1{
+            top: -3%;
+            left: 15%;
             transform: scale(.5);
           }
 
@@ -200,16 +328,54 @@ iframe {
           }
 
           .description{
-            width: 400px;
+            width: 370px;
             font-family: aktiv-grotesk, sans-serif;
             font-weight: 300;
             font-style: normal;
             position:absolute;
-            left: 10%;
+            left: 20%;
             top: 75%;
             font-size:16px;
             color: #0A014F;
-            margin-right: 10%;
+            margin-right: 15%;
+            text-align: left;
+          }
+
+
+      }
+
+
+      @media (max-width: 555px) {
+
+          
+
+          .iphonecontainer1{
+            top: -3%;
+            left: 10%;
+            transform: scale(.5);
+          }
+
+          header {
+            position: absolute;
+            font-size:100px;
+            font-family: kepler-std-condensed-subhead, serif;
+            font-weight: 400;
+            color: #0A014F;
+            top: 5%;
+            left: 15%;
+          }
+
+          .description{
+            width: 370px;
+            font-family: aktiv-grotesk, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            position:absolute;
+            left: 15%;
+            top: 75%;
+            font-size:16px;
+            color: #0A014F;
+            margin-right: 15%;
             text-align: left;
           }
 
