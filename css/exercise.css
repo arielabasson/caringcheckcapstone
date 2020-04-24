@@ -514,7 +514,7 @@ header {
   font-weight: 400;
   color: #0A014F;
   top: 20%;
-  left: 50%;
+  left: 56%;
   text-align:center;
 }
 
@@ -524,7 +524,7 @@ header {
   font-weight: 300;
   font-style: normal;
   position:absolute;
-  left: 50%;
+  left: 57%;
   top: 40%;
   font-size:30px;
   color: #0A014F;
@@ -586,6 +586,49 @@ iframe {
 
 
 
+      @media (max-width: 1372px) {
+
+          
+
+          .iphonecontainer1{
+            left: 5%;
+            transform: scale(.75);
+          }
+
+          .description{
+            left: 53%;
+
+          }
+
+
+          header{
+            left: 52%;
+          }
+
+
+      }
+
+      @media (max-width: 1250px) {
+
+          
+
+          .iphonecontainer1{
+            left: 5%;
+            transform: scale(.75);
+          }
+
+          .description{
+            left: 50%;
+
+          }
+
+
+          header{
+            left: 49%;
+          }
+
+
+      }
 
 
 
@@ -604,6 +647,8 @@ iframe {
 
 
       }
+
+
 
 
       @media (max-width: 1107px) {
